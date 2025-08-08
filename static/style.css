@@ -1,0 +1,93 @@
+:root {
+  --main-bg: #1e1e1e;
+  --display-bg: #2a2a2a;
+  --display-text: #DFD79D;
+  --cell-bg: #3c3c3c;
+  --cell-hover: #4d4d4d;
+  --cell-active: #5e5e5e;
+  --cell-text: #eee7b1;
+  --border-color: #000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-bg);
+  color: var(--display-text);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  background-color: var(--display-bg);
+  border-radius: 12px;
+  padding: 30px 40px;
+  box-shadow: 0 0 15px rgba(223, 215, 157, 0.4);
+  max-width: 480px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: var(--display-text);
+}
+
+form input,
+form textarea {
+  font-family: inherit;
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  background-color: var(--cell-bg);
+  border: 2px solid var(--cell-active);
+  border-radius: 8px;
+  color: var(--cell-text);
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: var(--display-text);
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--display-text);
+  color: var(--main-bg);
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--cell-active);
+}
+
+#status {
+  margin-top: 12px;
+  text-align: center;
+  font-weight: 600;
+}
