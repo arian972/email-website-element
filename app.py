@@ -14,7 +14,7 @@ RECEIVER_EMAIL = 'arian.bartholovich@gmail.com'
 
 @app.route('/')
 def serve_index():
-    return send_from_directory('.', 'templates/index.html')
+    return send_from_directory('.', 'index.html')
 
 @app.route('/send-email', methods=['POST'])
 def send_email():
